@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>equipment_systemClass</class>
+ <widget class="QWidget" name="equipment_systemClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1094</width>
+    <height>756</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>equipment_system</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>10</y>
+     <width>301</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <family>黑体</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="text">
+       <string>业务信息查询系统</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>60</y>
+     <width>1081</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>1081</width>
+     <height>661</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>设备管理</string>
+    </attribute>
+    <widget class="QPushButton" name="list_openfile">
+     <property name="geometry">
+      <rect>
+       <x>960</x>
+       <y>560</y>
+       <width>91</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>打开文件</string>
+     </property>
+    </widget>
+    <widget class="QTreeWidget" name="treeWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>941</width>
+       <height>611</height>
+      </rect>
+     </property>
+     <column>
+      <property name="text">
+       <string notr="true">1</string>
+      </property>
+     </column>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>设备查询</string>
+    </attribute>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>971</width>
+       <height>551</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="start_select">
+     <property name="geometry">
+      <rect>
+       <x>980</x>
+       <y>0</y>
+       <width>93</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>开始查询</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_insert_info">
+     <property name="geometry">
+      <rect>
+       <x>880</x>
+       <y>560</y>
+       <width>93</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>插入信息</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="delete_choose">
+     <property name="geometry">
+      <rect>
+       <x>980</x>
+       <y>160</y>
+       <width>93</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>删除选中</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="save_info">
+     <property name="geometry">
+      <rect>
+       <x>980</x>
+       <y>320</y>
+       <width>93</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>保存信息</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="file_insert">
+     <property name="geometry">
+      <rect>
+       <x>980</x>
+       <y>470</y>
+       <width>93</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>文件插入</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>570</y>
+       <width>751</width>
+       <height>46</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>ID：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="line_insert_id"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>设备信息：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="line_insert_info"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>设备状态：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="line_insert_status"/>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="equipment_system.qrc"/>
+ </resources>
+ <connections/>
+</ui>
